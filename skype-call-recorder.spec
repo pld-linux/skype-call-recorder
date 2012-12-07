@@ -8,6 +8,7 @@ URL:		http://atdot.ch/scr/
 Source0:	http://atdot.ch/scr/files/0.8/%{name}-%{version}.tar.gz
 # Source0-md5:	937544a5245fdcfa50878d083dab706a
 Patch0:		libs.patch
+Patch1:		skype-call-recorder-0.8-cmake.patch
 BuildRequires:	QtCore-devel
 BuildRequires:	QtDBus-devel
 BuildRequires:	QtGui-devel
@@ -26,6 +27,7 @@ Vorbis or WAV files.
 %prep
 %setup -q
 %patch0 -p1
+%patch1 -p1
 
 %build
 install -d build
