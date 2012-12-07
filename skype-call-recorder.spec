@@ -8,7 +8,7 @@ URL:		http://atdot.ch/scr/
 Source0:	http://atdot.ch/scr/files/0.8/%{name}-%{version}.tar.gz
 # Source0-md5:	937544a5245fdcfa50878d083dab706a
 Patch0:		libs.patch
-Patch1:		skype-call-recorder-0.8-cmake.patch
+Patch1:		%{name}-0.8-cmake.patch
 BuildRequires:	QtCore-devel
 BuildRequires:	QtDBus-devel
 BuildRequires:	QtGui-devel
@@ -16,6 +16,7 @@ BuildRequires:	cmake >= 2.4.8
 BuildRequires:	id3lib-devel
 BuildRequires:	lame-libs-devel
 BuildRequires:	libogg-devel >= 1.2.0
+BuildRequires:	libstdc++-devel
 BuildRequires:	libvorbis-devel >= 1.2.0
 Requires:	hicolor-icon-theme
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
